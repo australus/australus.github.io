@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /*
 	Theory by TEMPLATED
@@ -17,6 +18,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1787,6 +1789,10 @@
 		padding: 6em 0;
 	}
 
+	.nopad {
+		padding: 0;
+	}
+
 		section.wrapper header, article.wrapper header {
 			margin-bottom: 4em;
 		}
@@ -2533,6 +2539,16 @@
 				border-top: 0;
 			}
 
+.bigtext {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.midtext {
+	font-weight: bold;
+	font-size: 25px;
+}
+
 /* Button */
 
 	input[type="submit"],
@@ -2709,6 +2725,14 @@
 
 		}
 
+#three {
+	margin-top: -70px;
+	padding-top: 70px;
+}
+
+#about-us {
+	font-size: 50px;
+}
 /* Header */
 
 	.subpage {
@@ -2716,22 +2740,20 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
 			top: 0;
-			height: 44px;
-			line-height: 44px;
 			position: fixed;
 		}
 
 	#header {
 		color: #d4e0ef;
+		background: #5385c1;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: absolute;
+		position: fixed;
 		text-align: right;
-		top: 4em;
+		top: 0px;
 		width: 100%;
 		z-index: 10001;
 	}
@@ -2933,29 +2955,29 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.jpg');
-		background-size: cover;
-		background-position: top;
-		background-attachment: fixed;
+		padding: 33vh 0 43vh 100px;
+		background-image: url('../../images/australusbanner.png');
+		background-size: 1500px;
+		background-position-y: 100px;
+		background-position-x: 29vw;
 		background-repeat: no-repeat;
-		text-align: center;
-		border-top: 0.5em solid #5385c1;
+		text-align: left;
 	}
 
 		#banner h1 {
-			font-size: 3.5em;
-			font-weight: 100;
-			color: #fff;
+			font: 400 130px "Open Sans", sans-serif;
+			color: #000000;
 			line-height: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 20px;
+			margin-left: 100px;
 			padding: 0;
 		}
 
 		#banner p {
-			font-size: 1em;
-			color: rgba(255, 255, 255, 0.55);
-			margin-bottom: 1.75em;
+			font: 300 40px "Open Sans", sans-serif;
+			margin: 0;
+			margin-left: 100px;
+			color: #ff4d4d;
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -3067,5 +3089,5 @@
 	}
 
 	.size {
-		width:168px
+		width: 168px;
 	}
